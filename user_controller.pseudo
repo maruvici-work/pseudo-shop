@@ -1,6 +1,43 @@
 # Handles user signup and login
 
-# Placeholder function signatures:
+user_list = []
+
 # function create_user(name, email, password)
+
+    new_user = {
+        name: name,
+        email: email,
+        password: password
+        failed_attempts: 0,
+        is_locked: false
+    }
+
+    add new_user to user_list
+
+    return new_user
+
 # function login_user(email, password)
 
+    for each user in user_list:
+
+        if user.email == email:
+
+            if user.is_locked:
+                print "Account is locked."
+                return failure
+
+            if user.password == password:
+                user.failed_attempts = 0
+                print "Login successful."
+                return success
+
+            user.failed_attempts = user.failed_attempts + 1
+
+            if user.failed_attempts >= 3:
+                user.is_locked = true
+                print "Too many failed attempts. Account locked."
+
+            return failure
+
+    print "User not found."
+    return failure
