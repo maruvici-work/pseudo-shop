@@ -15,3 +15,10 @@
         print "Color: " + product.color
         print "Brand: " + product.brand
 
+# Demonstrate filtering
+function display_filtered_products(filters):
+
+    filtered_products = filter_products(filters)
+
+    for each product in filtered_products:
+        print product.name
