@@ -6,3 +6,5 @@
 # Run the app
 print "Welcome to the Pseudo Shop!"
 
+display_products()
+create_user(migs, migs@gcash.com @Gcash1234)
