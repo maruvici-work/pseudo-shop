@@ -3,3 +3,15 @@
 # Placeholder function:
 # function display_products()
 
+    for each product in product_list:
+
+        print "-------------------------"
+        print "Name: " + product.name
+        print "Price: " + product.price
+        print "Width: " + product.width
+        print "Height: " + product.height
+        print "Length: " + product.length
+        print "Weight: " + product.weight
+        print "Color: " + product.color
+        print "Brand: " + product.brand
+
