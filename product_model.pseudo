@@ -8,22 +8,22 @@ function filter_products(filters):
     for each product in product_list:
         matches = true
 
-        if product.width != filters.width:
+        if filters.width exists and product.width != filters.width:
             matches = false
 
-        if product.height != filters.height:
+        if filters.height exists and product.height != filters.height:
             matches = false
 
-        if product.length != filters.length:
+        if filters.length exists and product.length != filters.length:
             matches = false
 
-        if product.weight != filters.weight:
+        if filters.weight exists and product.weight != filters.weight:
             matches = false
 
-        if product.color != filters.color:
+        if filters.color exists and product.color != filters.color:
             matches = false
 
-        if product.brand != filters.brand:
+        if filters.brand exists and product.brand != filters.brand:
             matches = false
 
         if matches:
