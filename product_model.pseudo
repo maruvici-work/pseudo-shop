@@ -36,3 +36,7 @@ function add_product(
     }
 
     add new_product to product_list
+
+# Return all products
+function list_products():
+    return product_list
