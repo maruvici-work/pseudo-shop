@@ -1,3 +1,5 @@
+create_user(migs, migs@gcash.com @Gcash1234)
+
 # Add sample products
 add_product(
     "Gaming Mouse",
@@ -21,8 +23,6 @@ add_product(
     "RAKK"
 )
 
-display_products()
-create_user(migs, migs@gcash.com @Gcash1234)
 add_product(
     "Wireless Headset",
     3000,
@@ -33,3 +33,15 @@ add_product(
     "Black",
     "Bose"
 )
+
+# Display added products
+display_products()
+
+# Create filter criteria
+filters = {
+    color: "Black",
+    brand: "LogiTech"
+}
+
+# Display filtered products
+display_filtered_products(filters)

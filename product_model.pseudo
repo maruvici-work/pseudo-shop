@@ -42,3 +42,33 @@ function add_product(
 # Return all products
 function list_products():
     return product_list
+
+# Filter products using provided attributes
+function filter_products(filters):
+    filtered_products = []
+
+    for each product in product_list:
+        matches = true
+
+        if filters.width exists and product.width != filters.width:
+            matches = false
+
+        if filters.height exists and product.height != filters.height:
+            matches = false
+
+        if filters.length exists and product.length != filters.length:
+            matches = false
+
+        if filters.weight exists and product.weight != filters.weight:
+            matches = false
+
+        if filters.color exists and product.color != filters.color:
+            matches = false
+
+        if filters.brand exists and product.brand != filters.brand:
+            matches = false
+
+        if matches:
+            add product to filtered_products
+
+    return filtered_products
