@@ -1,16 +1,32 @@
-# Handles product data
-
-# Sample structure:
-# product = {
-#     name: "Sample Product",
-#     width: 10,
-#     height: 5,
-#     length: 20,
-#     weight: 1.5,
-#     color: "red",
-#     brand: "Generic"
-# }
-
-# Placeholder product list
+# Product data storage
 product_list = []
 
+# Filter products using provided attributes
+function filter_products(filters):
+    filtered_products = []
+
+    for each product in product_list:
+        matches = true
+
+        if product.width != filters.width:
+            matches = false
+
+        if product.height != filters.height:
+            matches = false
+
+        if product.length != filters.length:
+            matches = false
+
+        if product.weight != filters.weight:
+            matches = false
+
+        if product.color != filters.color:
+            matches = false
+
+        if product.brand != filters.brand:
+            matches = false
+
+        if matches:
+            add product to filtered_products
+
+    return filtered_products
