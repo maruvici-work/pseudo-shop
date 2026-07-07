@@ -16,6 +16,20 @@
         print "Brand: " + product.brand
 
 # Demonstrate filtering
+
+# Sort products by price
+function sort_products_by_price(order):
+
+    sorted_products = product_list
+
+    if order == "ascending":
+        sort sorted_products from lowest price to highest price
+
+    if order == "descending":
+        sort sorted_products from highest price to lowest price
+
+    return sorted_products
+    
 function display_filtered_products(filters):
 
     filtered_products = filter_products(filters)
