@@ -15,3 +15,10 @@ user_list = []
     return new_user
 
 # function login_user(email, password)
+
+    for each user in user_list:
+
+        if user.email == email and user.password == password:
+            return success
+
+    return failure
