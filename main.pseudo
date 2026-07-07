@@ -1,8 +1,33 @@
-# Main entry point
+# Add sample products
+add_product(
+    "Gaming Mouse",
+    1200,
+    12,
+    4,
+    7,
+    0.3,
+    "Black",
+    "LogiTech"
+)
 
-# This file ties together all components of the pseudo-shop
-# Feel free to modify this to simulate application flow
+add_product(
+    "Mechanical Keyboard",
+    2500,
+    45,
+    4,
+    15,
+    1.2,
+    "White",
+    "RAKK"
+)
 
-# Run the app
-print "Welcome to the Pseudo Shop!"
-
+add_product(
+    "Wireless Headset",
+    3000,
+    18,
+    20,
+    10,
+    0.6,
+    "Black",
+    "Bose"
+)

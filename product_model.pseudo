@@ -3,6 +3,7 @@
 # Sample structure:
 # product = {
 #     name: "Sample Product",
+#     price: 100,
 #     width: 10,
 #     height: 5,
 #     length: 20,
@@ -17,6 +18,7 @@ product_list = []
 # Add a new product
 function add_product(
     name,
+    price,
     width,
     height,
     length,
